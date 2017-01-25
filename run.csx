@@ -15,12 +15,12 @@ public static async Task<String> Run(TimerInfo myTimer, TraceWriter log)
     //log.Verbose($"C# HTTP trigger function processed a request. RequestUri={req.RequestUri}");
 
     string resourceId = "https://graph.microsoft.com";
-    string tenantId = "c9687145-521f-42e6-a002-c2df404a71ee";
+    string tenantId = "<tenantID>";
     string authString = "https://login.microsoftonline.com/" + tenantId;
     string upn = String.Empty;
-    string clientId = "a8c646c9-abbe-470b-9522-3404c2dde1fe";
-    //string clientSecret = "ROqZv3exzu53CVZxNIQt1izs8nzX280NuEYjSeE3HWg=";
-    string clientSecret = ConfigurationManager.AppSettings["clientSecret"];
+    string clientId = "<ClientID>";
+    string clientSecret = "<clientSecret>";
+    //string clientSecret = ConfigurationManager.AppSettings["clientSecret"];
 
 
     log.Verbose("ClientSecret=" + clientSecret);
